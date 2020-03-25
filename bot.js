@@ -12,7 +12,6 @@ client.on('ready', async () => {
         throw new Error('Omg');
     } catch (e) {
         console.log(`Logged in as ${client.user.tag}!`);
-        setInterval(intervalFunc, 20000);
         client.user.setPresence({ activity: { name: `spill` }, status: 'available' })
             .catch(console.error);
     }
